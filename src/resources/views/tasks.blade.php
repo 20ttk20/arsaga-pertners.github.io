@@ -55,8 +55,9 @@
 					<!-- TODO: Task Delete Button -->
 					<td>
 						<form action="{{ url('task/'.$task->id) }}" method="POST">
-							{{ csrf_field() }}
-							{{ method_field('DELETE') }}
+							@csrf
+							@method('DELETE')
+							
 				
 							<button type="submit" class="btn btn-danger">
 								<i class="fa fa-trash"></i> 削除
