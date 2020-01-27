@@ -16,6 +16,7 @@ class TodoController extends Controller
     {
         $todos = Todo::orderBy('id', 'desc')->paginate(10);
 
+
         return view('todos.index', compact('todos'));
         //
     }

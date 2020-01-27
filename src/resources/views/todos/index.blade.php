@@ -11,6 +11,7 @@
                     <div class="mb-3">
                         <a href="{{ route('todos.create') }}" class="btn btn-primary">追加</a>
                     </div>
+
                     @include('components.alert')
                    <table class="table">
                        <thead>
