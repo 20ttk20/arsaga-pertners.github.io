@@ -18,6 +18,7 @@ class TodoController extends Controller
 
 
         return view('todos.index', compact('todos'));
+        return view('home');
         //
     }
 
